@@ -1,0 +1,26 @@
+button {
+  display: flex;
+  column-gap: 12px;
+  margin-bottom: 32px;
+  background-color: var(--bg-color);
+  border: none;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 21px;
+  cursor: pointer;
+}
+
+button.underlined {
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--primary-text-color);
+}
+
+button.underlined > svg {
+  width: 20px;
+}
+
+button.underlined {
+  padding-bottom: 8px;
+}
+
+}

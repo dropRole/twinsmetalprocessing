@@ -8,6 +8,8 @@ nav {
 
 nav > p {
   font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 1.28px;
 }
 
 nav > p > span {
@@ -39,6 +41,8 @@ nav > div > select {
 
   nav > p {
     font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 1.44px;
     color: var(--secondary-text-color);
   }
 
@@ -51,6 +55,7 @@ nav > div > select {
     font-size: 14px;
     font-weight: 500;
     color: var(--secondary-text-color);
+    line-height: 21px;
     text-decoration: none;
   }
 
