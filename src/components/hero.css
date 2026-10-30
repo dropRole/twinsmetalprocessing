@@ -11,6 +11,7 @@ section#hero > p {
   font-weight: 500;
   line-height: 18px;
   letter-spacing: 1.92px;
+  text-transform: uppercase;
 }
 
 section#hero > div:first-of-type {
@@ -24,6 +25,7 @@ section#hero > div:first-of-type > p:first-of-type {
   font-weight: 600;
   line-height: 40.3px;
   letter-spacing: -3.12px;
+  text-transform: uppercase;
 }
 
 section#hero > div:first-of-type > p > span {
@@ -47,15 +49,13 @@ section#hero > div:nth-of-type(2) {
 section#hero > div:nth-of-type(2) > p {
   position: absolute;
   bottom: 0;
-  background-color: var(--bg-color);
-}
-
-section#hero > div:nth-of-type(2) > p {
   padding: 16px 28px;
+  background-color: var(--bg-color);
   font-size: 12px;
   font-weight: 600;
   line-height: 16px;
   letter-spacing: 1.92px;
+  text-transform: uppercase;
 }
 
 @media screen and (min-width: 1024px) {

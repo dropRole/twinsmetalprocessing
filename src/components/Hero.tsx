@@ -5,11 +5,11 @@ import Button from "./Button";
 const Hero: FC = () => {
   return (
     <section id="hero">
-      <p>PRECIZNA PROIZVODNJA · ČAČAK</p>
+      <p>Precizna proizvodnja · Čačak</p>
       <div>
         <p>
-          DVA BRATA. <br />
-          <span>JEDNA PRECIZNOST.</span>
+          Dva brata. <br />
+          <span>Jedna preciznost.</span>
         </p>
         <p>
           Bez preciznosti nema kvaliteta. <br />
@@ -19,7 +19,7 @@ const Hero: FC = () => {
       </div>
       <div>
         <img src="https://placehold.co/1920x1080" alt="hero image" />
-        <p>DELOVI KOJI PRUŽAJU PERFORMANSE</p>
+        <p>Delovi koji pružaju performanse</p>
       </div>
     </section>
   );
