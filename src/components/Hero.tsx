@@ -1,6 +1,7 @@
 import type { FC } from "react";
 import "./hero.css";
 import Button from "./Button";
+import heroImg from "../assets/images/hero.jpeg";
 
 const Hero: FC = () => {
   return (
@@ -18,7 +19,7 @@ const Hero: FC = () => {
         </p>
       </div>
       <div>
-        <img src="https://placehold.co/1920x1080" alt="hero image" />
+        <img src={heroImg} alt="hero image" />
         <p>Delovi koji pružaju performanse</p>
       </div>
     </section>
