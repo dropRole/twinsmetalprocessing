@@ -6,26 +6,26 @@ nav {
   border-bottom: 1px solid var(--border-color);
 }
 
-nav > p {
+p#navTitle {
   font-size: 16px;
   line-height: 24px;
   letter-spacing: 1.28px;
 }
 
-nav > p > span {
+p#navTitle > span {
   font-weight: 800;
   color: var(--primary-text-color);
 }
 
-nav > div {
+div#navItems {
   display: flex;
 }
 
-nav > div > *:not(select) {
+div#navItems > *:not(select) {
   display: none;
 }
 
-nav > div > select {
+select#navLangSwitcher {
   width: fit-content;
   font-weight: 600;
   background-color: var(--bg-color);
@@ -39,18 +39,18 @@ nav > div > select {
     padding: 20px 48px;
   }
 
-  nav > p {
+  p#navTitle {
     font-size: 18px;
     line-height: 28px;
     letter-spacing: 1.44px;
     color: var(--secondary-text-color);
   }
 
-  nav > div {
+  div#navItems {
     column-gap: 32px;
   }
 
-  nav > div > a {
+  div#navItems > a {
     display: block;
     font-size: 14px;
     font-weight: 500;
@@ -59,7 +59,7 @@ nav > div > select {
     text-decoration: none;
   }
 
-  nav > div > a:nth-of-type(4) {
+  div#navItems > a:nth-of-type(4) {
     padding-right: 32px;
     border-right: 1px solid var(--border-color);
   }

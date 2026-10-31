@@ -32,16 +32,16 @@ const Nav: FC = () => {
 
   return (
     <nav>
-      <p>
+      <p id="navTitle">
         <span>T</span>wins<span>M</span>etal<span>P</span>rocessing
       </p>
-      <div>
+      <div id="navItems">
         {items.map(({ href, text }) => (
           <a key={text} href={href}>
             {text}
           </a>
         ))}
-        <select>
+        <select id="navLangSwitcher">
           {langs.map((lang) => (
             <option key={lang}>{lang}</option>
           ))}
