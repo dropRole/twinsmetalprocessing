@@ -40,7 +40,7 @@ const Services: FC = () => {
       <p>Precizna i kvalitetna CNC mašinska obrada</p>
       <div>
         {services.map(({ type, description }) => (
-          <div key={type}>
+          <div className="service" key={type}>
             <p>{type}</p>
             <p>{description}</p>
           </div>

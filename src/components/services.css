@@ -27,21 +27,21 @@ section#services > div {
   margin-top: 40px;
 }
 
-section#services > div > div {
+div.service {
   width: 100%;
   min-height: 150px;
   padding: 36px 0;
 }
 
-section#services > div > div {
+div.service {
   border-top: 1px solid var(--border-color);
 }
 
-section#services > div > div:last-of-type {
+div.service:last-of-type {
   border-bottom: 1px solid var(--border-color);
 }
 
-section#services > div > div > p:first-of-type {
+div.service > p:first-of-type {
   font-size: 24px;
   font-weight: 600;
   line-height: 32px;
@@ -78,26 +78,26 @@ section#services > div > div > p:first-of-type {
     border-bottom: 1px solid var(--border-color);
   }
 
-  section#services > div > div {
+  div.service {
     width: 33.3%;
     min-height: 250px;
     padding: 36px 40px;
   }
 
-  section#services > div > div:nth-of-type(3n + 1) {
+  div.service:nth-of-type(3n + 1) {
     padding: 36px 40px 36px 0;
   }
 
-  section#services > div > div:nth-of-type(3n + 2) {
+  div.service:nth-of-type(3n + 2) {
     border-left: 1px solid var(--border-color);
     border-right: 1px solid var(--border-color);
   }
 
-  section#services > div > div:nth-of-type(-n + 3) {
+  div.service:nth-of-type(-n + 3) {
     border-bottom: 1px solid var(--border-color);
   }
 
-  section#services > div > div > p:first-of-type {
+  div.service > p:first-of-type {
     font-size: 24px;
     font-weight: 600;
     line-height: 32px;
