@@ -13,7 +13,7 @@ type ProductImages = {
 }[];
 
 const Products: FC = () => {
-  const [carouselScrollRight, setCarouselScrollRight] = useState<number>(0);
+  const [_carouselScrollRight, setCarouselScrollRight] = useState<number>(0);
 
   const carouselRef = useRef<ComponentRef<"div">>(null);
 
