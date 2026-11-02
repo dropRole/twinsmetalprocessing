@@ -11,14 +11,20 @@ button {
 }
 
 button.underlined {
-  padding-bottom: 8px;
   border-bottom: 1px solid var(--primary-text-color);
 }
 
-button.underlined > svg {
+button.underlined > svg,
+button.fill > svg {
   width: 20px;
 }
 
 button.underlined {
   padding-bottom: 8px;
+}
+
+button.fill {
+  padding: 12px 20px;
+  color: #fff;
+  background-color: #09090b;
 }

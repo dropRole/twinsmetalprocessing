@@ -30,7 +30,7 @@ const WhyUs: FC = () => {
       </div>
       <div>
         {reasons.map(({ reason, details }) => (
-          <div className="reason">
+          <div key={reason} className="reason">
             <p>{reason}</p>
             <p>{details}</p>
           </div>

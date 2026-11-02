@@ -1,0 +1,64 @@
+section#contact {
+  display: flex;
+  flex-direction: column;
+  row-gap: 50px;
+  padding: 96px 20px;
+}
+
+section#contact > div:first-of-type > p:first-of-type {
+  margin-bottom: 30px;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: 1.92px;
+  color: var(--secondary-text-color);
+  text-transform: uppercase;
+}
+
+section#contact > div:first-of-type > p:nth-of-type(2) {
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 43.2px;
+  letter-spacing: -2.64px;
+}
+
+section#contact > div:nth-of-type(2) > p {
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 29.3px;
+  color: var(--secondary-text-color);
+}
+
+section#contact > div:nth-of-type(2) > button {
+  width: 100%;
+}
+
+@media screen and (min-width: 1024px) {
+  section#contact {
+    flex-direction: row;
+    align-self: center;
+    max-width: 1200px;
+    padding: 144px 48px;
+  }
+
+  section#contact > div:first-of-type {
+    width: 65%;
+  }
+
+  section#contact > div:first-of-type > p:first-of-type {
+    margin-bottom: 50px;
+  }
+
+  section#contact > div:nth-of-type(2) {
+    width: 35%;
+  }
+
+  section#contact > div:first-of-type > p:nth-of-type(2) {
+    font-size: 88px;
+    font-weight: 600;
+    line-height: 78.8px;
+    letter-spacing: -4.81px;
+  }
+}

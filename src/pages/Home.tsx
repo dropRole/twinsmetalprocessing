@@ -4,6 +4,7 @@ import Hero from "../components/Hero";
 import Services from "../components/Services";
 import Products from "../components/Products";
 import WhyUs from "../components/WhyUs";
+import Contact from "../components/Contact";
 
 const Home: FC = () => {
   return (
@@ -13,6 +14,7 @@ const Home: FC = () => {
       <Services />
       <Products />
       <WhyUs />
+      <Contact />
     </>
   );
 };
