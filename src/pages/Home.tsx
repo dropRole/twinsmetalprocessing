@@ -3,6 +3,7 @@ import Nav from "../layouts/Nav";
 import Hero from "../components/Hero";
 import Services from "../components/Services";
 import Products from "../components/Products";
+import WhyUs from "../components/WhyUs";
 
 const Home: FC = () => {
   return (
@@ -11,6 +12,7 @@ const Home: FC = () => {
       <Hero />
       <Services />
       <Products />
+      <WhyUs />
     </>
   );
 };
