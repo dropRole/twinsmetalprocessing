@@ -1,0 +1,25 @@
+footer {
+  display: flex;
+  justify-content: space-between;
+  row-gap: 20px;
+  padding: 28px 20px;
+  border-top: 1px solid var(--border-color);
+}
+
+footer > p {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  color: var(--secondary-text-color);
+}
+
+footer > p:nth-of-type(2) > a {
+  color: var(--secondary-text-color);
+  text-decoration: none;
+}
+
+@media screen and (min-width: 1024px) {
+  footer {
+    padding: 20px 48px;
+  }
+}
