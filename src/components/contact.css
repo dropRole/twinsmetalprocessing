@@ -12,7 +12,6 @@ section#contact > div:first-of-type > p:first-of-type {
   font-weight: 500;
   line-height: 18px;
   letter-spacing: 1.92px;
-  color: var(--secondary-text-color);
   text-transform: uppercase;
 }
 
