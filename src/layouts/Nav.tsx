@@ -1,5 +1,6 @@
 import type { FC } from "react";
 import "./nav.css";
+import emblemIcon from "../assets/icons/emblem.png";
 
 type NavItems = {
   text: string;
@@ -33,7 +34,8 @@ const Nav: FC = () => {
   return (
     <nav>
       <p id="navTitle">
-        <span>T</span>wins<span>M</span>etal<span>P</span>rocessing
+        <img src={emblemIcon} alt="emblem" />
+        <span>T</span>wins<span>M</span>etal processing
       </p>
       <div id="navItems">
         {items.map(({ href, text }) => (

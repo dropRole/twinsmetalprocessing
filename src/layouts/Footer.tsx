@@ -4,7 +4,7 @@ import "./footer.css";
 const Footer: FC = () => {
   return (
     <footer>
-      <p>© {new Date().getFullYear()} TwinsMetalProcessing</p>
+      <p>© {new Date().getFullYear()} TwinsMetal processing</p>
       <p>
         Built by{" "}
         <a href="https://github.com/dropRole" target="_blank">
