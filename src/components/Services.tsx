@@ -10,18 +10,19 @@ const Services: FC = () => {
   const services: Services = [
     {
       type: "CNC glodanje",
-      description: "",
+      description: "Izrada mašinskih delova od svih vrsta metala i plastike.",
     },
     {
       type: "CNC struganje",
-      description: "",
+      description:
+        "Izdrada rotacionih delova kako serijiskih tako i pojedinacnih komada.",
     },
     {
       type: "Brušenje",
-      description: "",
+      description: "Finalna obrada površina.",
     },
     {
-      type: "Izrada delova po tehničkon nacrtu",
+      type: "Izrada po tehničkon nacrtu",
       description: "",
     },
     {
