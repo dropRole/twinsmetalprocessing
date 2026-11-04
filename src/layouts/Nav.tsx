@@ -1,10 +1,10 @@
-import type { FC } from "react";
+import type { FC, MouseEvent } from "react";
 import "./nav.css";
 import emblemIcon from "../assets/icons/emblem.png";
 
 type NavItems = {
   text: string;
-  href: string;
+  scrollTo: string;
 }[];
 
 type Langs = ["SR", "ENG"];
@@ -13,19 +13,19 @@ const Nav: FC = () => {
   const items: NavItems = [
     {
       text: "Usluge",
-      href: "",
+      scrollTo: "section#services",
     },
     {
       text: "Proizvodi",
-      href: "",
+      scrollTo: "section#products",
     },
     {
       text: "Zašto mi",
-      href: "",
+      scrollTo: "section#whyUs",
     },
     {
       text: "Kontakt",
-      href: "",
+      scrollTo: "section#contact",
     },
   ];
 
@@ -38,8 +38,18 @@ const Nav: FC = () => {
         <span>T</span>wins<span>M</span>etal processing
       </p>
       <div id="navItems">
-        {items.map(({ href, text }) => (
-          <a key={text} href={href}>
+        {items.map(({ text, scrollTo }) => (
+          <a
+            key={text}
+            href=""
+            onClick={(e: MouseEvent) => {
+              e.preventDefault();
+
+              document
+                .querySelector(scrollTo)
+                ?.scrollIntoView({ behavior: "smooth" });
+            }}
+          >
             {text}
           </a>
         ))}
