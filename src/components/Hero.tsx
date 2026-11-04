@@ -1,4 +1,4 @@
-import type { FC } from "react";
+import type { FC, MouseEvent } from "react";
 import "./hero.css";
 import Button from "./Button";
 import heroImg from "../assets/images/hero.jpeg";
@@ -15,7 +15,15 @@ const Hero: FC = () => {
         <p>
           Bez preciznosti nema kvaliteta. <br />
           Bez kvaliteta nema poverenja.
-          <Button variant="underlined" text="Naše mogućnosti" />
+          <Button
+            variant="underlined"
+            text="Naše mogućnosti"
+            action={() => {
+              document
+                .querySelector("section#services")
+                ?.scrollIntoView({ behavior: "smooth" });
+            }}
+          />
         </p>
       </div>
       <div>
