@@ -22,7 +22,7 @@ section#contact > div:first-of-type > p:nth-of-type(2) {
   letter-spacing: -2.64px;
 }
 
-section#contact > div:nth-of-type(2) > p {
+section#contact > div:nth-of-type(2) > p:first-of-type {
   margin-bottom: 20px;
   font-size: 18px;
   font-weight: 400;
@@ -32,6 +32,17 @@ section#contact > div:nth-of-type(2) > p {
 
 section#contact > div:nth-of-type(2) > button {
   width: 100%;
+}
+
+section#contact > div:nth-of-type(2) > p:nth-of-type(2) {
+  display: flex;
+  align-items: center;
+  column-gap: 5px;
+  color: var(--secondary-text-color);
+}
+
+section#contact > div:nth-of-type(2) > p:nth-of-type(2) > span {
+  font-size: 1.6rem;
 }
 
 @media screen and (min-width: 1024px) {
@@ -50,14 +61,18 @@ section#contact > div:nth-of-type(2) > button {
     margin-bottom: 50px;
   }
 
-  section#contact > div:nth-of-type(2) {
-    width: 35%;
-  }
-
   section#contact > div:first-of-type > p:nth-of-type(2) {
     font-size: 88px;
     font-weight: 600;
     line-height: 78.8px;
     letter-spacing: -4.81px;
+  }
+
+  section#contact > div:nth-of-type(2) {
+    width: 35%;
+  }
+
+  section#contact > div:nth-of-type(2) > p:first-of-type {
+    margin-bottom: 40px;
   }
 }

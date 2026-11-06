@@ -11,7 +11,8 @@ const Contact: FC = () => {
       </div>
       <div>
         <p>
-          Pošaljite nam vaše nacrte i zahteve. Mi ćemo započeti prve korake.
+          Kontaktirajte nas putem telefona ili pošaljite nam vaše nacrte i
+          zahteve. Mi ćemo započeti prve korake.
         </p>
         <Button
           variant="fill"
@@ -20,6 +21,9 @@ const Contact: FC = () => {
             (window.location.href = "mailto:twinsmetalprocessing@gmail.com")
           }
         />
+        <p>
+          <span>&#9990;</span> +381 60 6770 194/ +381 66 8134848
+        </p>
       </div>
     </section>
   );
