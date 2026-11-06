@@ -3,6 +3,9 @@ import "./products.css";
 import millingImg0 from "../assets/images/milling_0.jpg";
 import millingImg1 from "../assets/images/milling_1.jpg";
 import millingImg2 from "../assets/images/milling_2.jpg";
+import millingImg3 from "../assets/images/milling_3.jpeg";
+import millingImg4 from "../assets/images/milling_4.jpeg";
+import millingImg5 from "../assets/images/milling_5.jpg";
 import scrapingImg0 from "../assets/images/scraping_0.jpg";
 import scrapingImg1 from "../assets/images/scraping_1.jpg";
 import scrapingImg2 from "../assets/images/scraping_2.jpg";
@@ -29,9 +32,7 @@ const Products: FC = () => {
 
     let scrollWidth = carouselItemWidth + carouselItemGap;
 
-    let carouselWidth = parseInt(
-      window.getComputedStyle(carouselRef.current).width.split("px")[0],
-    );
+    let carouselWidth = carouselRef.current.scrollWidth - 3 * scrollWidth;
 
     setCarouselScrollRight((prev) => {
       let next = prev;
@@ -69,6 +70,18 @@ const Products: FC = () => {
     },
     {
       src: millingImg2,
+      productType: "CNC Glodanje",
+    },
+    {
+      src: millingImg3,
+      productType: "CNC Glodanje",
+    },
+    {
+      src: millingImg4,
+      productType: "CNC Glodanje",
+    },
+    {
+      src: millingImg5,
       productType: "CNC Glodanje",
     },
     {
