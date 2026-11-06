@@ -19,19 +19,22 @@ const Services: FC = () => {
     },
     {
       type: "Brušenje",
-      description: "Finalna obrada površina.",
+      description: "Finalna mašinska obrada površina.",
     },
     {
       type: "Izrada po tehničkon nacrtu",
-      description: "",
+      description:
+        "Izrada mašinskih delova prema tehničkim crtežima, skicama i 3D CAD modelima.",
     },
     {
       type: "Precizna mašinska obrada",
-      description: "",
+      description:
+        "Izrada metalnih i drugih mašinskih delova na CNC strugovima i glodalicama.",
     },
     {
       type: "Serijska proizvodnja",
-      description: "",
+      description:
+        "Serijska izrada mašinskih delova na CNC glodalicama i strugovima.",
     },
   ];
 
