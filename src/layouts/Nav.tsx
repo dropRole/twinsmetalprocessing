@@ -6,7 +6,7 @@ type NavItems = {
   href: string;
 }[];
 
-type Langs = ["SR", "ENG"];
+type Langs = ["SR", "EN"];
 
 const Nav: FC = () => {
   const items: NavItems = [
@@ -28,7 +28,7 @@ const Nav: FC = () => {
     },
   ];
 
-  const langs: Langs = ["SR", "ENG"];
+  const langs: Langs = ["SR", "EN"];
 
   return (
     <nav>
