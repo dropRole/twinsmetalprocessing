@@ -6,5 +6,14 @@
             "whyUs": "Why us",
             "contact": "Contact"
         }
+    },
+    "hero": {
+        "productionLocation": "Precise production · Cacak",
+        "slogans": {
+            "main": "Two brothers. <1 /><2>Single precision.</2>",
+            "sub": "Without precision there's no quality. <1 />Without quality there's no trust."
+        },
+        "anchorToServices": "Our possibilities",
+        "imageCaption": "Parts that guarantee performance"
     }
 }

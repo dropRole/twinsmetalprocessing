@@ -6,5 +6,14 @@
             "whyUs": "Zašto mi",
             "contact": "Kontakt"
         }
+    },
+    "hero": {
+        "productionLocation": "Precizna proizvodnja · Čačak",
+        "slogans": {
+            "main": "Dva brata. <1 /><2>Jedna preciznost.</2>",
+            "sub": "Bez preciznosti nema kvaliteta. <1 />Bez kvaliteta nema poverenja."
+        },
+        "anchorToServices": "Naše mogućnosti",
+        "imageCaption": "Delovi koji pružaju performanse"
     }
 }
