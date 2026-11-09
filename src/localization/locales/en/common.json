@@ -43,5 +43,19 @@
             "milling": "CNC Milling",
             "scarping": "CNC Scarping"
         } 
+    },
+    "whyUs": {
+        "choice": "Why us",
+        "heading": "Two perspectives. <1 />Single perfect processing.",
+        "reasons": {
+            "precision": "Precision",
+            "planning": "Planning",
+            "communication": "Communication"
+        },
+        "reasonDetails": {
+            "precision": "Accuracy is not an option but a rule.",
+            "planning": "Each project is approached according to specific requirements.",
+            "communication": "Agility and efficiency in business."
+        }
     }
 }

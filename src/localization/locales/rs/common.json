@@ -43,5 +43,19 @@
             "milling": "CNC Glodanje",
             "scarping": "CNC Struganje"
         } 
+    },
+    "whyUs": {
+        "choice": "Zašto mi",
+        "heading": "Dva pogleda. <1 />Jedna savršena obrada.",
+        "reasons": {
+            "precision": "Preciznost",
+            "planning": "Planiranje",
+            "communication": "Komunikacija"
+        },
+        "reasonDetails": {
+            "precision": "Tačnost nije opcija već pravilo.",
+            "planning": "Svakom projektu se pristupa po specifičnim zahtevima.",
+            "communication": "Agilnost i učinkovitost pri poslovanju."
+        }
     }
 }
