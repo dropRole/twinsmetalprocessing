@@ -57,5 +57,13 @@
             "planning": "Svakom projektu se pristupa po specifičnim zahtevima.",
             "communication": "Agilnost i učinkovitost pri poslovanju."
         }
+    },
+    "contact": {
+        "project": "Vaš projekat",
+        "heading": "Želite mašinsku obradu?",
+        "invitation": "Kontaktirajte nas putem telefona ili pošaljite nam vaše nacrte i zahteve. Mi ćemo započeti prve korake."
+    },
+    "footer": {
+        "developed": "Razvio "
     }
 }

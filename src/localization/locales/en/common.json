@@ -57,5 +57,13 @@
             "planning": "Each project is approached according to specific requirements.",
             "communication": "Agility and efficiency in business."
         }
+    },
+    "contact": {
+        "project": "Your project",
+        "heading": "Looking for machining services?",
+        "invitation": "Contact us by phone or send us your designs and requests. We will begin the first steps."
+    },
+    "footer": {
+        "developed": "Developed by "
     }
 }
