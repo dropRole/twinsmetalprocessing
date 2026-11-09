@@ -41,7 +41,7 @@ const Services: FC = () => {
   return (
     <section id="services">
       <p>Čime se bavimo</p>
-      <p>Precizna i kvalitetna CNC mašinska obrada</p>
+      <p>Precizna i kvalitetna CNC mašinska obrada.</p>
       <div>
         {services.map(({ type, description }) => (
           <div className="service" key={type}>

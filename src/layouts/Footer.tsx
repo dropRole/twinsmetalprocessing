@@ -6,7 +6,7 @@ const Footer: FC = () => {
     <footer>
       <p>© {new Date().getFullYear()} TwinsMetal processing</p>
       <p>
-        Built by{" "}
+        Razvio{" "}
         <a href="https://github.com/dropRole" target="_blank">
           DWE
         </a>
