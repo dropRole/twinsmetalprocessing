@@ -35,5 +35,13 @@
                 "preciseProduction": "Production of metal and other machine parts on CNC lathes and milling machines.",
                 "batchProduction": "Serial production of machine parts on CNC milling machines and lathes."
             }
+    },
+    "products": {
+        "featured": "Featured products",
+        "heading": "Precision in every detail.",
+        "productTypes": {
+            "milling": "CNC Milling",
+            "scarping": "CNC Scarping"
+        } 
     }
 }

@@ -35,5 +35,13 @@
             "preciseProduction": "Izrada metalnih i drugih mašinskih delova na CNC strugovima i glodalicama.",
             "batchProduction": "Serijska izrada mašinskih delova na CNC glodalicama i strugovima."
         }
+    },
+    "products": {
+        "featured": "Izdvojeni proizvodi",
+        "heading": "Preciznost u svakom detalju.",
+        "productTypes": {
+            "milling": "CNC Glodanje",
+            "scarping": "CNC Struganje"
+        } 
     }
 }
