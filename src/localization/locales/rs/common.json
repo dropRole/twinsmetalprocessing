@@ -1,0 +1,69 @@
+{
+    "nav": {
+        "items": {
+            "services": "Usluge",
+            "products": "Proizvodi",
+            "whyUs": "Zašto mi",
+            "contact": "Kontakt"
+        }
+    },
+    "hero": {
+        "productionLocation": "Precizna proizvodnja · Čačak",
+        "slogans": {
+            "main": "Dva brata. <1 /><2>Jedna preciznost.</2>",
+            "sub": "Bez preciznosti nema kvaliteta. <1 />Bez kvaliteta nema poverenja."
+        },
+        "anchorToServices": "Naše mogućnosti",
+        "imageCaption": "Delovi koji pružaju performanse"
+    },
+    "services": {
+        "activity": "Čime se bavimo",
+        "heading": "Precizna i kvalitetna CNC mašinska obrada",
+        "serviceTypes": {
+            "milling": "CNC Glodanje",
+            "scarping": "CNC Struganje",
+            "grinding": "Brušenje",
+            "technicalDrawing": "Izrada po tehničkom nacrtu",
+            "preciseProduction": "Precizna mašinska obrada",
+            "batchProduction": "Serijska proizvodnja"
+        },
+        "serviceDescriptions": {
+            "milling": "Izrada mašinskih delova od svih vrsta metala i plastike.",
+            "scarping": "Izrada rotacionih delova kako serijiskih tako i pojedinacnih komada.",
+            "grinding": "Finalna mašinska obrada površina.",
+            "technicalDrawing": "Izrada mašinskih delova prema tehničkim crtežima, skicama i 3D CAD modelima.",
+            "preciseProduction": "Izrada metalnih i drugih mašinskih delova na CNC strugovima i glodalicama.",
+            "batchProduction": "Serijska izrada mašinskih delova na CNC glodalicama i strugovima."
+        }
+    },
+    "products": {
+        "featured": "Izdvojeni proizvodi",
+        "heading": "Preciznost u svakom detalju.",
+        "productTypes": {
+            "milling": "CNC Glodanje",
+            "scarping": "CNC Struganje"
+        } 
+    },
+    "whyUs": {
+        "choice": "Zašto mi",
+        "heading": "Dva pogleda. <1 />Jedna savršena obrada.",
+        "reasons": {
+            "precision": "Preciznost",
+            "planning": "Planiranje",
+            "communication": "Komunikacija"
+        },
+        "reasonDetails": {
+            "precision": "Tačnost nije opcija već pravilo.",
+            "planning": "Svakom projektu se pristupa po specifičnim zahtevima.",
+            "communication": "Agilnost i učinkovitost pri poslovanju."
+        }
+    },
+    "contact": {
+        "project": "Vaš projekat",
+        "heading": "Želite mašinsku obradu?",
+        "invitation": "Kontaktirajte nas putem telefona ili pošaljite nam vaše nacrte i zahteve. Mi ćemo započeti prve korake."
+    },
+    "footer": {
+        "developed": "Razvio "
+    }
+}

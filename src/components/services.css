@@ -24,28 +24,29 @@ section#services > p:nth-of-type(2) {
 section#services > div {
   display: flex;
   flex-direction: column;
+  row-gap: 30px;
   margin-top: 40px;
 }
 
 div.service {
   width: 100%;
-  min-height: 150px;
-  padding: 36px 0;
-}
-
-div.service {
-  border-top: 1px solid var(--border-color);
-}
-
-div.service:last-of-type {
-  border-bottom: 1px solid var(--border-color);
 }
 
 div.service > p:first-of-type {
+  padding: 15px 20px;
   font-size: 24px;
   font-weight: 600;
   line-height: 32px;
   letter-spacing: -0.6px;
+  background-color: #18181b;
+  border-radius: 3px;
+  clip-path: polygon(95% 0%, 100% 50%, 95% 100%, 0% 100%, 0% 50%, 0% 0%);
+  color: #fff;
+}
+
+div.service > p:nth-of-type(2) {
+  width: 95%;
+  padding: 10px 20px;
 }
 
 @media screen and (min-width: 1024px) {
@@ -53,54 +54,55 @@ div.service > p:first-of-type {
     flex-direction: row;
     flex-wrap: wrap;
     align-self: center;
+    justify-content: center;
     max-width: 1200px;
     padding: 144px 48px;
   }
 
-  section#services > p {
-    width: 50%;
+  section#services > p:first-of-type {
+    width: 15%;
   }
 
   section#services > p:nth-of-type(2) {
-    margin-top: 0;
+    width: 85%;
+  }
+
+  section#services > div {
+    row-gap: 0;
+  }
+
+  section#services > p:nth-of-type(2) {
     font-size: 48px;
     font-weight: 600;
     line-height: 60px;
     letter-spacing: -1.2px;
   }
 
-  section#services > div {
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 100%;
-    margin-top: 40px;
-    border-top: 1px solid var(--border-color);
-    border-bottom: 1px solid var(--border-color);
-  }
-
   div.service {
-    width: 33.3%;
-    min-height: 250px;
-    padding: 36px 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
-  div.service:nth-of-type(3n + 1) {
-    padding: 36px 40px 36px 0;
+  div.service:nth-of-type(even) {
+    flex-direction: row-reverse;
   }
 
-  div.service:nth-of-type(3n + 2) {
-    border-left: 1px solid var(--border-color);
-    border-right: 1px solid var(--border-color);
-  }
-
-  div.service:nth-of-type(-n + 3) {
-    border-bottom: 1px solid var(--border-color);
+  div.service:nth-of-type(even) > p:first-of-type {
+    clip-path: polygon(0% 50%, 5% 0%, 100% 0%, 100% 100%, 5% 100%, 0% 50%);
   }
 
   div.service > p:first-of-type {
+    width: 50%;
+    padding: 30px;
     font-size: 24px;
     font-weight: 600;
     line-height: 32px;
     letter-spacing: -0.6px;
+  }
+
+  div.service > p:nth-of-type(2) {
+    width: 50%;
+    border-bottom: none;
   }
 }

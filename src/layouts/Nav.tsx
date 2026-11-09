@@ -1,30 +1,34 @@
-import type { FC } from "react";
+import type { FC, MouseEvent } from "react";
 import "./nav.css";
+import emblemIcon from "../assets/icons/emblem.png";
+import { useTranslation } from "react-i18next";
 
 type NavItems = {
   text: string;
-  href: string;
+  scrollTo: string;
 }[];
 
 type Langs = ["SR", "EN"];
 
 const Nav: FC = () => {
+  const { t, i18n } = useTranslation();
+
   const items: NavItems = [
     {
-      text: "Usluge",
-      href: "",
+      text: t(($) => $["nav.items.services"]),
+      scrollTo: "section#services",
     },
     {
-      text: "Proizvodi",
-      href: "",
+      text: t(($) => $["nav.items.products"]),
+      scrollTo: "section#products",
     },
     {
-      text: "Zašto mi",
-      href: "",
+      text: t(($) => $["nav.items.whyUs"]),
+      scrollTo: "section#whyUs",
     },
     {
-      text: "Kontakt",
-      href: "",
+      text: t(($) => $["nav.items.contact"]),
+      scrollTo: "section#contact",
     },
   ];
 
@@ -33,17 +37,30 @@ const Nav: FC = () => {
   return (
     <nav>
       <p id="navTitle">
-        <span>T</span>wins<span>M</span>etal<span>P</span>rocessing
+        <img src={emblemIcon} alt="emblem" />
+        <span>T</span>wins<span>M</span>etal processing
       </p>
       <div id="navItems">
-        {items.map(({ href, text }) => (
-          <a key={text} href={href}>
+        {items.map(({ text, scrollTo }) => (
+          <a
+            key={text}
+            href=""
+            onClick={(e: MouseEvent) => {
+              e.preventDefault();
+
+              document
+                .querySelector(scrollTo)
+                ?.scrollIntoView({ behavior: "smooth" });
+            }}
+          >
             {text}
           </a>
         ))}
         <select id="navLangSwitcher">
           {langs.map((lang) => (
-            <option key={lang}>{lang}</option>
+            <option key={lang} onClick={() => i18n.changeLanguage(lang)}>
+              {lang}
+            </option>
           ))}
         </select>
       </div>

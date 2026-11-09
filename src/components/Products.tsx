@@ -3,9 +3,13 @@ import "./products.css";
 import millingImg0 from "../assets/images/milling_0.jpg";
 import millingImg1 from "../assets/images/milling_1.jpg";
 import millingImg2 from "../assets/images/milling_2.jpg";
+import millingImg3 from "../assets/images/milling_3.jpeg";
+import millingImg4 from "../assets/images/milling_4.jpeg";
+import millingImg5 from "../assets/images/milling_5.jpg";
 import scrapingImg0 from "../assets/images/scraping_0.jpg";
 import scrapingImg1 from "../assets/images/scraping_1.jpg";
 import scrapingImg2 from "../assets/images/scraping_2.jpg";
+import { useTranslation } from "react-i18next";
 
 type ProductImages = {
   src: string;
@@ -14,6 +18,8 @@ type ProductImages = {
 
 const Products: FC = () => {
   const [_carouselScrollRight, setCarouselScrollRight] = useState<number>(0);
+
+  const { t } = useTranslation();
 
   const carouselRef = useRef<ComponentRef<"div">>(null);
 
@@ -29,9 +35,7 @@ const Products: FC = () => {
 
     let scrollWidth = carouselItemWidth + carouselItemGap;
 
-    let carouselWidth = parseInt(
-      window.getComputedStyle(carouselRef.current).width.split("px")[0],
-    );
+    let carouselWidth = carouselRef.current.scrollWidth - 3 * scrollWidth;
 
     setCarouselScrollRight((prev) => {
       let next = prev;
@@ -61,35 +65,47 @@ const Products: FC = () => {
   const productImages: ProductImages = [
     {
       src: millingImg0,
-      productType: "CNC Glodanje",
+      productType: t(($) => $["products.productTypes.milling"]),
     },
     {
       src: millingImg1,
-      productType: "CNC Glodanje",
+      productType: t(($) => $["products.productTypes.milling"]),
     },
     {
       src: millingImg2,
-      productType: "CNC Glodanje",
+      productType: t(($) => $["products.productTypes.milling"]),
+    },
+    {
+      src: millingImg3,
+      productType: t(($) => $["products.productTypes.milling"]),
+    },
+    {
+      src: millingImg4,
+      productType: t(($) => $["products.productTypes.milling"]),
+    },
+    {
+      src: millingImg5,
+      productType: t(($) => $["products.productTypes.milling"]),
     },
     {
       src: scrapingImg0,
-      productType: "CNC Struganje",
+      productType: t(($) => $["products.productTypes.scarping"]),
     },
     {
       src: scrapingImg1,
-      productType: "CNC Struganje",
+      productType: t(($) => $["products.productTypes.scarping"]),
     },
     {
       src: scrapingImg2,
-      productType: "CNC Struganje",
+      productType: t(($) => $["products.productTypes.scarping"]),
     },
   ];
 
   return (
     <section id="products">
-      <p>Izdvojeni proizvodi</p>
+      <p>{t(($) => $["products.featured"])}</p>
       <div>
-        <p>Preciznost u svakom detalju.</p>
+        <p>{t(($) => $["products.heading"])}</p>
         <div id="carouselControls">
           <svg
             aria-hidden="true"

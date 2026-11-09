@@ -1,0 +1,69 @@
+{
+    "nav": {
+        "items": {
+            "services": "Services",
+            "products": "Products",
+            "whyUs": "Why us",
+            "contact": "Contact"
+        }
+    },
+    "hero": {
+        "productionLocation": "Precise production · Cacak",
+        "slogans": {
+            "main": "Two brothers. <1 /><2>Single precision.</2>",
+            "sub": "Without precision there's no quality. <1 />Without quality there's no trust."
+        },
+        "anchorToServices": "Our possibilities",
+        "imageCaption": "Parts that guarantee performance"
+    },
+    "services": {
+        "activity": "What we do",
+        "heading": "Precise and high-quality CNC machining",
+        "serviceTypes": {
+            "milling": "CNC Milling",
+            "scarping": "CNC Scarping",
+            "grinding": "Grinding",
+            "technicalDrawing": "Manufacturing to technical drawing",
+            "preciseProduction": "Precision machining",
+            "batchProduction": "Batch production"
+        },
+        "serviceDescriptions": {
+                "milling": "Production of machine parts from all types of metal and plastic.",
+                "scarping": "Production of rotary parts, both serial and individual pieces.",
+                "grinding": "Final machining of surfaces.",
+                "technicalDrawing": "Production of machine parts according to technical drawings, sketches and 3D CAD models.",
+                "preciseProduction": "Production of metal and other machine parts on CNC lathes and milling machines.",
+                "batchProduction": "Serial production of machine parts on CNC milling machines and lathes."
+            }
+    },
+    "products": {
+        "featured": "Featured products",
+        "heading": "Precision in every detail.",
+        "productTypes": {
+            "milling": "CNC Milling",
+            "scarping": "CNC Scarping"
+        } 
+    },
+    "whyUs": {
+        "choice": "Why us",
+        "heading": "Two perspectives. <1 />Single perfect processing.",
+        "reasons": {
+            "precision": "Precision",
+            "planning": "Planning",
+            "communication": "Communication"
+        },
+        "reasonDetails": {
+            "precision": "Accuracy is not an option but a rule.",
+            "planning": "Each project is approached according to specific requirements.",
+            "communication": "Agility and efficiency in business."
+        }
+    },
+    "contact": {
+        "project": "Your project",
+        "heading": "Looking for machining services?",
+        "invitation": "Contact us by phone or send us your designs and requests. We will begin the first steps."
+    },
+    "footer": {
+        "developed": "Developed by "
+    }
+}
