@@ -15,5 +15,25 @@
         },
         "anchorToServices": "Naše mogućnosti",
         "imageCaption": "Delovi koji pružaju performanse"
+    },
+    "services": {
+        "activity": "Čime se bavimo",
+        "heading": "Precizna i kvalitetna CNC mašinska obrada",
+        "serviceTypes": {
+            "milling": "CNC Glodanje",
+            "scarping": "CNC Struganje",
+            "grinding": "Brušenje",
+            "technicalDrawing": "Izrada po tehničkom nacrtu",
+            "preciseProduction": "Precizna mašinska obrada",
+            "batchProduction": "Serijska proizvodnja"
+        },
+        "serviceDescriptions": {
+            "milling": "Izrada mašinskih delova od svih vrsta metala i plastike.",
+            "scarping": "Izrada rotacionih delova kako serijiskih tako i pojedinacnih komada.",
+            "grinding": "Finalna mašinska obrada površina.",
+            "technicalDrawing": "Izrada mašinskih delova prema tehničkim crtežima, skicama i 3D CAD modelima.",
+            "preciseProduction": "Izrada metalnih i drugih mašinskih delova na CNC strugovima i glodalicama.",
+            "batchProduction": "Serijska izrada mašinskih delova na CNC glodalicama i strugovima."
+        }
     }
 }

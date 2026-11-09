@@ -15,5 +15,25 @@
         },
         "anchorToServices": "Our possibilities",
         "imageCaption": "Parts that guarantee performance"
+    },
+    "services": {
+        "activity": "What we do",
+        "heading": "Precise and high-quality CNC machining",
+        "serviceTypes": {
+            "milling": "CNC Milling",
+            "scarping": "CNC Scarping",
+            "grinding": "Grinding",
+            "technicalDrawing": "Manufacturing to technical drawing",
+            "preciseProduction": "Precision machining",
+            "batchProduction": "Batch production"
+        },
+        "serviceDescriptions": {
+                "milling": "Production of machine parts from all types of metal and plastic.",
+                "scarping": "Production of rotary parts, both serial and individual pieces.",
+                "grinding": "Final machining of surfaces.",
+                "technicalDrawing": "Production of machine parts according to technical drawings, sketches and 3D CAD models.",
+                "preciseProduction": "Production of metal and other machine parts on CNC lathes and milling machines.",
+                "batchProduction": "Serial production of machine parts on CNC milling machines and lathes."
+            }
     }
 }
