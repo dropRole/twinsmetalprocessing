@@ -1,6 +1,7 @@
 import type { FC, MouseEvent } from "react";
 import "./nav.css";
 import emblemIcon from "../assets/icons/emblem.png";
+import { useTranslation } from "react-i18next";
 
 type NavItems = {
   text: string;
@@ -10,21 +11,23 @@ type NavItems = {
 type Langs = ["SR", "EN"];
 
 const Nav: FC = () => {
+  const { t, i18n } = useTranslation();
+
   const items: NavItems = [
     {
-      text: "Usluge",
+      text: t(($) => $["nav.items.services"]),
       scrollTo: "section#services",
     },
     {
-      text: "Proizvodi",
+      text: t(($) => $["nav.items.products"]),
       scrollTo: "section#products",
     },
     {
-      text: "Zašto mi",
+      text: t(($) => $["nav.items.whyUs"]),
       scrollTo: "section#whyUs",
     },
     {
-      text: "Kontakt",
+      text: t(($) => $["nav.items.contact"]),
       scrollTo: "section#contact",
     },
   ];
@@ -55,7 +58,9 @@ const Nav: FC = () => {
         ))}
         <select id="navLangSwitcher">
           {langs.map((lang) => (
-            <option key={lang}>{lang}</option>
+            <option key={lang} onClick={() => i18n.changeLanguage(lang)}>
+              {lang}
+            </option>
           ))}
         </select>
       </div>

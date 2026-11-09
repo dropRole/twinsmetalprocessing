@@ -1,0 +1,10 @@
+{
+    "nav": {
+        "items": {
+            "services": "Usluge",
+            "products": "Proizvodi",
+            "whyUs": "Zašto mi",
+            "contact": "Kontakt"
+        }
+    }
+}

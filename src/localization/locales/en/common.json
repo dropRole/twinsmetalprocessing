@@ -1,0 +1,10 @@
+{
+    "nav": {
+        "items": {
+            "services": "Services",
+            "products": "Products",
+            "whyUs": "Why us",
+            "contact": "Contact"
+        }
+    }
+}
