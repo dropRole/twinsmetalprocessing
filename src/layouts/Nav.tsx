@@ -1,4 +1,4 @@
-import type { FC, MouseEvent } from "react";
+import type { ChangeEvent, FC, MouseEvent } from "react";
 import "./nav.css";
 import emblemIcon from "../assets/icons/emblem.png";
 import { useTranslation } from "react-i18next";
@@ -56,11 +56,12 @@ const Nav: FC = () => {
             {text}
           </a>
         ))}
-        <select id="navLangSwitcher">
+        <select
+          id="navLangSwitcher"
+          onChange={(e: ChangeEvent) => i18n.changeLanguage(e.target.value)}
+        >
           {langs.map((lang) => (
-            <option key={lang} onClick={() => i18n.changeLanguage(lang)}>
-              {lang}
-            </option>
+            <option key={lang}>{lang}</option>
           ))}
         </select>
       </div>

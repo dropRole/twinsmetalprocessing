@@ -18,7 +18,7 @@
     },
     "services": {
         "activity": "Čime se bavimo",
-        "heading": "Precizna i kvalitetna CNC mašinska obrada",
+        "heading": "Precizna i kvalitetna CNC mašinska obrada.",
         "serviceTypes": {
             "milling": "CNC Glodanje",
             "scarping": "CNC Struganje",
