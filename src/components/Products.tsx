@@ -19,6 +19,8 @@ type ProductImages = {
 const Products: FC = () => {
   const [_carouselScrollRight, setCarouselScrollRight] = useState<number>(0);
 
+  const [showScrollIndicator, setShowScrollIndicator] = useState(false);
+
   const { t } = useTranslation();
 
   const carouselRef = useRef<ComponentRef<"div">>(null);
@@ -59,7 +61,24 @@ const Products: FC = () => {
   };
 
   useEffect(() => {
-    if (carouselRef.current) carouselRef.current.scrollLeft = 0;
+    const observer = new IntersectionObserver(
+      (e) => {
+        const [entry] = e;
+        if (entry.isIntersecting) setShowScrollIndicator(true);
+        else setShowScrollIndicator(false);
+      },
+      { threshold: 0.5 },
+    );
+
+    if (carouselRef.current) {
+      carouselRef.current.scrollLeft = 0;
+
+      observer.observe(carouselRef.current);
+    }
+
+    return () => {
+      if (carouselRef.current) observer.unobserve(carouselRef.current);
+    };
   }, []);
 
   const productImages: ProductImages = [
@@ -134,6 +153,13 @@ const Products: FC = () => {
         </div>
       </div>
       <div id="carouselWrapper">
+        <div
+          id="carouselIndicator"
+          className={showScrollIndicator ? "show" : "hide"}
+        >
+          <span></span>
+          <span>&#10148;</span>
+        </div>
         <div id="carousel" ref={carouselRef}>
           {productImages.map(({ src, productType }) => (
             <div key={src}>
