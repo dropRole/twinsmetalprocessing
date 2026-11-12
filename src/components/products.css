@@ -30,8 +30,71 @@ section#products > div > p {
 }
 
 div#carouselWrapper {
+  position: relative;
   width: 100%;
   overflow: hidden;
+}
+
+div#carouselIndicator.hide {
+  opacity: 0;
+}
+
+div#carouselIndicator.show {
+  position: absolute;
+  top: 50%;
+  right: 5%;
+  translate: 0 -100%;
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+}
+
+div#carouselIndicator.show > span {
+  position: absolute;
+  top: 0;
+  right: 0;
+  translate: 0 -100%;
+  display: block;
+  width: 50px;
+  height: 50px;
+  pointer-events: none;
+}
+
+div#carouselIndicator.show > span:first-of-type {
+  border-radius: 50%;
+  background-color: rgba(9, 9, 11, 0.6);
+  animation:
+    twitch 4 1s 0.5s,
+    hide forwards 1 0.5s 4.5s;
+}
+
+div#carouselIndicator.show > span:nth-of-type(2) {
+  font-size: 2rem;
+  color: #fff;
+  text-align: center;
+  animation:
+    twitch 4 1s 0.5s,
+    hide forwards 1 0.5s 4.5s;
+}
+
+@keyframes twitch {
+  0% {
+    translate: 0% -100%;
+  }
+  50% {
+    translate: 20% -100%;
+  }
+  100% {
+    translate: 0% -100%;
+  }
+}
+
+@keyframes hide {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 
 div#carousel {
@@ -113,6 +176,10 @@ div#carousel > div > img {
 
   div#carouselWrapper {
     margin-top: 30px;
+  }
+
+  div#carouselIndicator {
+    display: none;
   }
 
   div#carousel {
