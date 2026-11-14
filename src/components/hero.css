@@ -47,18 +47,6 @@ section#hero > div:nth-of-type(2) {
   position: relative;
 }
 
-section#hero > div:nth-of-type(2) > p {
-  position: absolute;
-  bottom: 0;
-  padding: 16px 28px;
-  background-color: var(--bg-color);
-  font-size: 12px;
-  font-weight: 600;
-  line-height: 16px;
-  letter-spacing: 1.92px;
-  text-transform: uppercase;
-}
-
 section#hero > div:nth-of-type(2) {
   width: 100%;
   height: 325px;
@@ -70,6 +58,18 @@ section#hero > div:nth-of-type(2) > img {
   height: 100%;
   object-fit: cover;
   object-position: 50%;
+}
+
+section#hero > div:nth-of-type(2) > p {
+  position: absolute;
+  bottom: 10px;
+  padding: 16px 28px;
+  background-color: var(--bg-color);
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 16px;
+  letter-spacing: 1.92px;
+  text-transform: uppercase;
 }
 
 @media screen and (min-width: 1024px) {
@@ -121,5 +121,9 @@ section#hero > div:nth-of-type(2) > img {
 
   section#hero > div:nth-of-type(2) > img {
     object-position: 50% 40%;
+  }
+
+  section#hero > div:nth-of-type(2) > p {
+    bottom: 0;
   }
 }
