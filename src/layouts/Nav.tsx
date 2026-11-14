@@ -1,6 +1,6 @@
 import type { ChangeEvent, FC, MouseEvent } from "react";
 import "./nav.css";
-import emblemIcon from "../assets/icons/emblem.png";
+import emblemIcon from "../assets/icons/emblem.webp";
 import { useTranslation } from "react-i18next";
 
 type NavItems = {

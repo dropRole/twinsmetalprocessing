@@ -1,7 +1,7 @@
 import type { FC } from "react";
 import "./hero.css";
 import Button from "./Button";
-import heroImg from "../assets/images/hero.jpeg";
+import heroImg from "../assets/images/hero.webp";
 import { Trans, useTranslation } from "react-i18next";
 
 const Hero: FC = () => {

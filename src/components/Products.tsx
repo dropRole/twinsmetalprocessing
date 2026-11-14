@@ -1,14 +1,14 @@
 import { useEffect, useRef, useState, type ComponentRef, type FC } from "react";
 import "./products.css";
-import millingImg0 from "../assets/images/milling_0.jpg";
-import millingImg1 from "../assets/images/milling_1.jpg";
-import millingImg2 from "../assets/images/milling_2.jpg";
-import millingImg3 from "../assets/images/milling_3.jpeg";
-import millingImg4 from "../assets/images/milling_4.jpeg";
-import millingImg5 from "../assets/images/milling_5.jpg";
-import scrapingImg0 from "../assets/images/scraping_0.jpg";
-import scrapingImg1 from "../assets/images/scraping_1.jpg";
-import scrapingImg2 from "../assets/images/scraping_2.jpg";
+import millingImg0 from "../assets/images/milling_0.webp";
+import millingImg1 from "../assets/images/milling_1.webp";
+import millingImg2 from "../assets/images/milling_2.webp";
+import millingImg3 from "../assets/images/milling_3.webp";
+import millingImg4 from "../assets/images/milling_4.webp";
+import millingImg5 from "../assets/images/milling_5.webp";
+import scrapingImg0 from "../assets/images/scraping_0.webp";
+import scrapingImg1 from "../assets/images/scraping_1.webp";
+import scrapingImg2 from "../assets/images/scraping_2.webp";
 import { useTranslation } from "react-i18next";
 
 type ProductImages = {
