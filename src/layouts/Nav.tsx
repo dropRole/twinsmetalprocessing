@@ -1,6 +1,6 @@
 import type { FC, MouseEvent } from "react";
 import "./nav.css";
-import emblemIcon from "../assets/icons/emblem.png";
+import emblemIcon from "../assets/icons/emblem.webp";
 
 type NavItems = {
   text: string;
