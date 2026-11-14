@@ -61,14 +61,11 @@ const Products: FC = () => {
   };
 
   useEffect(() => {
-    const observer = new IntersectionObserver(
-      (e) => {
-        const [entry] = e;
-        if (entry.isIntersecting) setShowScrollIndicator(true);
-        else setShowScrollIndicator(false);
-      },
-      { threshold: 0.5 },
-    );
+    const observer = new IntersectionObserver((e) => {
+      const [entry] = e;
+      if (entry.isIntersecting) setShowScrollIndicator(true);
+      else setShowScrollIndicator(false);
+    });
 
     if (carouselRef.current) {
       carouselRef.current.scrollLeft = 0;
@@ -160,7 +157,11 @@ const Products: FC = () => {
           <span></span>
           <span>&#10148;</span>
         </div>
-        <div id="carousel" ref={carouselRef}>
+        <div
+          id="carousel"
+          ref={carouselRef}
+          onTouchEnd={() => setShowScrollIndicator(false)}
+        >
           {productImages.map(({ src, productType }) => (
             <div key={src}>
               <img src={src} alt="product image" />
